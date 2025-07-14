@@ -128,11 +128,7 @@ def clear():
     shared_memory["name"] = None 
     
     agent_executor = create_agent()
-    return render_template(
-        "index.html",
-        name=None, 
-        chat_history=[]
-    )
+    return redirect(url_for("index"))
 
 if __name__ == "__main__":
     app.run(debug=True)

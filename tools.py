@@ -19,7 +19,7 @@ def list_todos(dummy: str = "list") -> str:
     todos = shared_memory["todo_list"]
     if not todos:
         return "Your to-do list is empty."
-    return "\n".join(f"{i+1}. {todo}" for i, todo in enumerate(todos))
+    return "Here's your current to-do list:\n" + "\n".join(f"{i+1}. {todo}" for i, todo in enumerate(todos))
 
 @tool
 def remove_todo(item: str) -> str:

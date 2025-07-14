@@ -1,37 +1,3 @@
-<!-- <!DOCTYPE html>
-<html>
-<head>
-    <title>Gemini Chatbot</title>
-    <style>
-        body { font-family: Arial; background: #f4f4f4; padding: 20px; }
-        .chat-box { max-width: 600px; margin: auto; background: white; padding: 20px; border-radius: 10px; }
-        .message { margin-bottom: 15px; }
-        .user { color: #1a73e8; font-weight: bold; }
-        .bot { color: #0b8043; font-weight: bold; }
-    </style>
-</head>
-<body>
-    <div class="chat-box">
-        <h2>🤖 Gemini Agentic Chatbot</h2>
-        <form method="POST">
-            <input type="text" name="message" placeholder="Type your message..." required style="width:80%">
-            <button type="submit">Send</button>
-        </form>
-        <hr>
-        {% if name is none %}
-            <p><strong>Bot:</strong> Hello! What's your name?</p>
-        {% else %}
-            <p><strong>Bot:</strong> Welcome back, {{ name }}!</p>
-        {% endif %}
-        {% for msg in chat_history %}
-            <div class="message"><span class="user">You:</span> {{ msg.user }}</div>
-            <div class="message"><span class="bot">Bot:</span> {{ msg.ai }}</div>
-        {% endfor %}
-    </div>
-</body>
-</html> -->
-
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -58,7 +24,6 @@
             </form>
         </div>
         <hr>
-        console.log(todo_list)
         {% if name is none %}
             <p><strong>Bot:</strong> Hello! What's your name?</p>
         {% else %}
@@ -66,13 +31,8 @@
         {% endif %}
         {% for msg in chat_history %}
             <div class="message"><span class="user">You:</span> {{ msg.user }}</div>
-            <div class="message"><span class="bot">Agent:</span> {{ msg.ai }}</div>
+            <div class="message"><span class="bot">Agent:</span> {{ msg.ai|replace('\n', '<br>')|safe }}</div>
         {% endfor %}
-        {% if todo_list %}
-            {% for task in todo_list %}
-                <div class="message"><span class="user"></span> {{ task }}</div>
-            {% endfor %}
-        {% endif %}
     </div>
 </body>
 </html>

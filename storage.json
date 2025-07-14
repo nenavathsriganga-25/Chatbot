@@ -1,98 +1,24 @@
 {
-    "name": "Sri ganga",
+    "name": "shashi",
     "chat_history": [
         {
-            "user": "Sri ganga",
-            "ai": "Nice to meet you, Sri ganga!"
-        },
-        {
-            "user": "add take bath",
-            "ai": "I have added 'take bath' to your to-do list."
-        },
-        {
-            "user": "add eat foooood",
-            "ai": "I have added 'eat foooood' to your to-do list."
-        },
-        {
-            "user": "show my to do list",
-            "ai": "Your current to-do list includes 'take bath' and 'eat foooood'."
-        },
-        {
-            "user": "add twtere",
-            "ai": "I have added 'twtere' to your to-do list."
-        },
-        {
-            "user": "show my todos",
-            "ai": "Your to-do list includes 'take bath', 'eat foooood', and 'twtere'."
-        },
-        {
-            "user": "show my todos",
-            "ai": "Your current to-do list includes: take bath, eat foooood, and twtere."
+            "user": "shashi",
+            "ai": "Nice to meet you, shashi!"
         },
         {
             "user": "show my todo list",
             "ai": "Your to-do list is empty."
         },
         {
-            "user": "add take bath",
-            "ai": "I have added 'take bath' to your to-do list."
+            "user": "sry add bath",
+            "ai": "I have added 'bath' to your to-do list."
         },
         {
-            "user": "add ewqa",
-            "ai": "I have added 'ewqa' to your to-do list."
-        },
-        {
-            "user": "show my todo list",
-            "ai": "Your to-do list contains the following items: take bath, ewqa."
-        },
-        {
-            "user": "show todo",
-            "ai": "Your to-do list contains 'take bath' and 'ewqa'."
-        },
-        {
-            "user": "show todo",
-            "ai": "Your current to-do list includes 'take bath' and 'ewqa'."
-        },
-        {
-            "user": "show todo",
-            "ai": "Your current to-do list includes 'take bath' and 'ewqa'."
-        },
-        {
-            "user": "show todo",
-            "ai": "Your to-do list currently includes 'take bath' and 'ewqa'."
-        },
-        {
-            "user": "show todo",
-            "ai": "Your current to-do list includes 'take bath' and 'ewqa'."
-        },
-        {
-            "user": "show todo",
-            "ai": "Your current to-do list includes 'take bath' and 'ewqa'."
-        },
-        {
-            "user": "show todo",
-            "ai": "Your to-do list currently includes 'take bath' and 'ewqa'."
-        },
-        {
-            "user": "show todo",
-            "ai": "Your to-do list includes 'take bath' and 'ewqa'."
-        },
-        {
-            "user": "show todo",
-            "ai": "Your to-do list includes 'take bath' and 'ewqa'."
-        },
-        {
-            "user": "show todo",
-            "ai": "Your current to-do list includes 'take bath' and 'ewqa'."
-        },
-        {
-            "user": "add carrom",
-            "ai": "I have added 'carrom' to your to-do list."
+            "user": "show me todo",
+            "ai": "Here's your current to-do list:\n1. bath"
         }
     ],
     "todo_list": [
-        "take bath",
-        "ewqa",
-        "carrom"
+        "bath"
     ]
 }

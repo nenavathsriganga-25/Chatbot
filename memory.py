@@ -7,7 +7,6 @@ def load_memory():
     if STORE_PATH.exists():
         with open(STORE_PATH, "r") as f:
             data = json.load(f)
-            print(data)
             return data
     else:
         return {"name": None, "chat_history": [], "todo_list": []}
