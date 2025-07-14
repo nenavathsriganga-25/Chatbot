@@ -1,92 +1,98 @@
 {
-    "name": "Hello",
+    "name": "Sri ganga",
     "chat_history": [
         {
-            "user": "hi",
-            "ai": "Hi there! How can I help you today?"
+            "user": "Sri ganga",
+            "ai": "Nice to meet you, Sri ganga!"
         },
         {
-            "user": "show me my to do list",
-            "ai": "It seems like you're asking me to show you your to-do list. Unfortunately, I don't have access to your personal to-do list. I can only help you add items to it. Would you like to add something?"
-        },
-        {
-            "user": "add but dresses",
-            "ai": "I have added 'Buy dresses' to your to-do list."
-        },
-        {
-            "user": "now can you show to do list",
-            "ai": "I do not have the ability to show you your to-do list. I can only add items to it."
-        },
-        {
-            "user": "now can you show to do list",
-            "ai": "I am sorry, I cannot show you your to-do list. I can only add or remove items."
-        },
-        {
-            "user": "remove buy dresses from my list",
-            "ai": "The item 'Buy dresses' is not currently on your to-do list."
-        },
-        {
-            "user": "remove buy dresses from the list",
-            "ai": "The item 'buy dresses' is not on your to-do list."
-        },
-        {
-            "user": "add eat cake in my list",
-            "ai": "I have added 'eat cake' to your to-do list."
-        },
-        {
-            "user": "add take bath in my list",
+            "user": "add take bath",
             "ai": "I have added 'take bath' to your to-do list."
         },
         {
-            "user": "remove eat cake from my list",
-            "ai": "The item 'eat cake' is not on your to-do list."
+            "user": "add eat foooood",
+            "ai": "I have added 'eat foooood' to your to-do list."
         },
         {
-            "user": "remove eat cake from my list",
-            "ai": "Okay, I was unable to remove 'eat cake' from your to-do list because it was not found."
+            "user": "show my to do list",
+            "ai": "Your current to-do list includes 'take bath' and 'eat foooood'."
+        },
+        {
+            "user": "add twtere",
+            "ai": "I have added 'twtere' to your to-do list."
         },
         {
             "user": "show my todos",
-            "ai": "I am sorry, I cannot show you your to-do list. I can only add or remove items."
+            "ai": "Your to-do list includes 'take bath', 'eat foooood', and 'twtere'."
         },
         {
             "user": "show my todos",
+            "ai": "Your current to-do list includes: take bath, eat foooood, and twtere."
+        },
+        {
+            "user": "show my todo list",
             "ai": "Your to-do list is empty."
         },
         {
-            "user": "add eat chocolate",
-            "ai": "I have added 'eat chocolate' to your to-do list."
+            "user": "add take bath",
+            "ai": "I have added 'take bath' to your to-do list."
         },
         {
-            "user": "show my todos",
-            "ai": "Your to-do list is empty."
+            "user": "add ewqa",
+            "ai": "I have added 'ewqa' to your to-do list."
         },
         {
-            "user": "show my todos",
-            "ai": "Your to-do list is empty."
+            "user": "show my todo list",
+            "ai": "Your to-do list contains the following items: take bath, ewqa."
         },
         {
-            "user": "add brushing ",
-            "ai": "Your to-do list currently contains: brushing"
+            "user": "show todo",
+            "ai": "Your to-do list contains 'take bath' and 'ewqa'."
         },
         {
-            "user": "add eating food ",
-            "ai": "Your current to-do list contains: brushing and eating food."
+            "user": "show todo",
+            "ai": "Your current to-do list includes 'take bath' and 'ewqa'."
         },
         {
-            "user": "show my ",
-            "ai": "Your to-do list contains brushing and eating food."
+            "user": "show todo",
+            "ai": "Your current to-do list includes 'take bath' and 'ewqa'."
         },
         {
-            "user": "remove brushing from my todos",
-            "ai": "Okay, I have removed 'brushing' from your to-do list."
+            "user": "show todo",
+            "ai": "Your to-do list currently includes 'take bath' and 'ewqa'."
         },
         {
-            "user": "now show my todos",
-            "ai": "Your to-do list contains: eating food."
+            "user": "show todo",
+            "ai": "Your current to-do list includes 'take bath' and 'ewqa'."
+        },
+        {
+            "user": "show todo",
+            "ai": "Your current to-do list includes 'take bath' and 'ewqa'."
+        },
+        {
+            "user": "show todo",
+            "ai": "Your to-do list currently includes 'take bath' and 'ewqa'."
+        },
+        {
+            "user": "show todo",
+            "ai": "Your to-do list includes 'take bath' and 'ewqa'."
+        },
+        {
+            "user": "show todo",
+            "ai": "Your to-do list includes 'take bath' and 'ewqa'."
+        },
+        {
+            "user": "show todo",
+            "ai": "Your current to-do list includes 'take bath' and 'ewqa'."
+        },
+        {
+            "user": "add carrom",
+            "ai": "I have added 'carrom' to your to-do list."
         }
     ],
     "todo_list": [
-        "eating food"
+        "take bath",
+        "ewqa",
+        "carrom"
     ]
 }
