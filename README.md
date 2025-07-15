@@ -1,19 +1,33 @@
 # Gemini Chatbot
-Gemini Chatbot is a simple and customizable web-based chatbot built using Python Flask and HTML/CSS.It provides a clean user interface for chatting with a agent, storing message history, and resetting the conversation.
+**Gemini Chatbot** is a simple and customizable web-based chatbot built using **Python Flask** and **HTML/CSS**.It provides a clean user interface for chatting with a agent, storing message history, and resetting the conversation.
+---
+
+## ✨ Features
+
 The chatbot can:
-     -Remember user's name and previous messages
-     -Store and manage a personal to-do list
-     -Use tool calls (like add_todo, list_todos, remove_todo)
-     -Run on a Flask web UI
+
+-**Remember user's name** and previous messages
+- **Store and manage a personal to-do list**
+- Use **tool calls**:
+    - `add_todo`
+    - `list_todos`
+    - `remove_todo`
+- Run on a **Flask web UI**
+
 ---
 
 ## 🧠Memory Storage
+
 Memory is stored and retrieved using a JSON file called **`storage.json`**.
-###Memory includes:
--name → User's name (stored after first message)
--chat_history → Full conversation history
--todo_list → Contains to-do list
+
+### **Memory includes:**
+
+- `name` → User's name (stored after first message)
+- `chat_history` → Full conversation history
+- `todo_list` → Contains the to-do list
+
 Memory is **loaded on startup** and **updated after every tool or chat interaction**.
+
 ---
 
 ## 🔧Tool Calls
@@ -37,23 +51,40 @@ agent_executor = initialize_agent(
     verbose=True
 )
 
-#⚙️ Setup Instructions
-1️⃣ Clone the Repo
+# ⚙️ Setup Instructions
+
+### 1️⃣ Clone the Repository
+
+
 git clone https://github.com/your-username/Chatbot.git
 cd Chatbot
-2️⃣ Set Up Virtual Environment
+
+### 2️⃣ Set Up Virtual Environment
+
 python -m venv virtual
 .\virtual\Scripts\activate    # For Windows
-3️⃣ Install Requirements
+# or
+source virtual/bin/activate   # For Mac/Linux
+
+### 3️⃣ Install Requirements
+
 pip install -r requirements.txt
-4️⃣ Add Your .env File
-Create a .env file:
+
+### 4️⃣ Add Your .env File
+
+Create a .env file in the project root:
 GOOGLE_API_KEY=your-real-api-key-here
-5️⃣ Run the App
+
+### 5️⃣ Run the App
+
 python app.py
-🌐 Access:
-Open your browser at:
+
+### 🌐 Access the Web Interface
+
+Open your browser and go to:
+
 http://127.0.0.1:5000
+
 
 💬 Example Prompts
 | Prompt                  | What happens?           |
