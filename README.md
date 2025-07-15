@@ -1,5 +1,5 @@
 # Gemini Chatbot
-**Gemini Chatbot** is a simple and customizable web-based chatbot built using **Python Flask** and **HTML/CSS**. It provides a clean user interface for chatting with a agent, storing message history, and resetting the conversation.
+**Gemini Chatbot** is a simple and customizable web-based chatbot built using **Python Flask** and **HTML/CSS**. It provides a clean user interface for chatting with an agent, storing message history, and resetting the conversation.
 
 ---
 
@@ -97,7 +97,7 @@ agent_executor = initialize_agent(
 ### 1️⃣ Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/Chatbot.git
+git clone https://github.com/nenavathsriganga-25/Chatbot.git
 cd Chatbot
 ```
 
