@@ -6,24 +6,28 @@
 ## 📁 Project Structure
 
 ```
-chatbot/
-├── app.py             # Flask app
-├── agent.py           # LLM agent setup
-├── tools.py           # Tool functions (add_todo, list_todo, remove_todo)
-├── memory.py          # Load/save memory to storage.json
+Chatbot/
+├── app.py                 # Flask web app (runs the chatbot UI)
+├── agent.py               # LangChain agent setup (handles LLM + tools)
+├── tools.py               # To-do list tools (add, list, remove)
+├── memory.py              # Manages memory (loads/saves storage.json)
+├── storage.json           # Persistent storage for name, chat history, todo list
+├── requirements.txt       # Python dependencies
+├── README.md               # Project documentation
+
 ├── templates/
-│   └── index.html     # Web UI
-├── .env               # API keys (not uploaded)
-├── .gitignore         # Ignore virtual env and .env
-├── storage.json       # Chat + to-do list memory
-└── requirements.txt   # Python dependencies
+│   └── index.html         # Chatbot web UI (HTML template)
+
+├── architecture.png       # Architecture diagram (for README)
+├── screenshot.png         # Chatbot UI screenshot (for README)
+
 ```
 
 ---
 
 ## 🗺️ Architecture Overview
 
-![Architecture](./architecture.png) 
+<img src="./architecture.png" width="400px">
 
 ---
 
@@ -162,6 +166,5 @@ http://127.0.0.1:5000
 
 ## 💻 Chatbot UI Screenshot
 
-![Chatbot UI](./screenshot.png)
-
+<img src="./screenshot.png" width="300px">
 
