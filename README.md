@@ -23,7 +23,7 @@ chatbot/
 
 ## 🗺️ Architecture Overview
 
-![Architecture](./architecture.png)
+![Architecture](./architecture.png) 
 
 ---
 
@@ -162,7 +162,7 @@ http://127.0.0.1:5000
 
 ## 💻 Chatbot UI Screenshot
 
-![Chatbot Screenshot](<img width="300" height="300" alt="Screenshot 2025-07-15 164204" src="https://github.com/user-attachments/assets/ae61e6bb-5f7a-4c37-b899-41c953f165db" />
+![Chatbot Screenshot](<img width="1012" height="915" alt="Screenshot 2025-07-15 164204" src="https://github.com/user-attachments/assets/31cfc35a-e9a3-4739-b9a5-bccc8fa44fcb" />
 )
 
 
