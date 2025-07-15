@@ -27,7 +27,7 @@ Chatbot/
 
 ## 🗺️ Architecture Overview
 
-<img src="./architecture.png" width="400px">
+<img src="./architecture.png" width="250px">
 
 ---
 
