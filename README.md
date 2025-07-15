@@ -39,6 +39,8 @@ Tools are defined in `tools.py` using LangChain's **@tool** decorator:
 | `list_todos(dummy: str)` | Lists all current to-dos       |
 | `remove_todo(item: str)` | Removes a to-do item by name   |
 
+---
+
 ### Registration with Agent:
 
 In `agent.py`, the tools are registered with LangChain’s Agent system:
@@ -51,6 +53,8 @@ agent_executor = initialize_agent(
     verbose=True
 )
 ```
+---
+
 # ⚙️ Setup Instructions
 
 ### 1️⃣ Clone the Repository
@@ -96,6 +100,7 @@ Open your browser and go to:
 
 http://127.0.0.1:5000
 
+---
 
 💬 Example Prompts
 | Prompt                  | What happens?           |
@@ -105,6 +110,8 @@ http://127.0.0.1:5000
 | "Add buy chocolates"    | Adds to-do              |
 | "Show my to-do list"    | Lists current to-dos    |
 | "Remove buy chocolates" | Removes that to-do      |
+
+---
 
 ## ⚠️ Limitations:
 
@@ -118,6 +125,8 @@ http://127.0.0.1:5000
 - Add user authentication for multi-user support
 - Deploy live on Render / Replit
 - Switch to LangGraph for more flexible workflows
+
+---
 
 ## 📁 Project Structure
 
