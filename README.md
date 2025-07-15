@@ -2,36 +2,22 @@
 **Gemini Chatbot** is a simple and customizable web-based chatbot built using **Python Flask** and **HTML/CSS**.It provides a clean user interface for chatting with a agent, storing message history, and resetting the conversation.
 
 ---
-## 🗺️ Architecture Overview
 
-- Textual Flow Diagram
+## 📁 Project Structure
 
-+------------------+      User Inputs (messages, to-do commands)       +------------------+
-|                  |  -----------------------------------------------> |                  |
-|  Web Frontend    |                                                   |   Flask Server   |
-| (HTML via Flask) |  <----------------------------------------------- |  (app.py)        |
-+------------------+               Bot Responses                      +------------------+
-                                           |
-                                           |
-                                           v
-+--------------------------+   Calls agent_executor.run()   +------------------------+
-|                          | ------------------------------> |                        |
-|     LangChain Agent      |                                |    Gemini API (LLM)    |
-|   (agent.py + LangChain) | <------------------------------ | (via LangChain LLM)   |
-+--------------------------+      Receives LLM output       +------------------------+
-          |    ^    
-          |    |
-          |    +----------------+
-          |                     |
-          |         Tool Calls (add_todo, list_todos, remove_todo)
-          |                     |
-          v                     |
-+-------------------+      +-------------------+
-|    tools.py       |      |   memory.py       |
-| - add_todo()      |      | - Load/Save       |
-| - list_todos()    |      | - storage.json    |
-| - remove_todo()   |      +-------------------+
-+-------------------+ 
+```
+chatbot/
+├── app.py             # Flask app
+├── agent.py           # LLM agent setup
+├── tools.py           # Tool functions (add_todo, list_todo, remove_todo)
+├── memory.py          # Load/save memory to storage.json
+├── templates/
+│   └── index.html     # Web UI
+├── .env               # API keys (not uploaded)
+├── .gitignore         # Ignore virtual env and .env
+├── storage.json       # Chat + to-do list memory
+└── requirements.txt   # Python dependencies
+```
 
 ---
 
@@ -51,7 +37,7 @@ The chatbot can:
 
 ## 🧠Memory Storage
 
-Memory is stored and retrieved using a JSON file called **`storage.json`**.
+Memory is stored and retrieved using a JSON file called **`storage.json`** until we clear the conversation.
 
 ### **Memory includes:**
 
@@ -138,11 +124,10 @@ http://127.0.0.1:5000
 💬 Example Prompts
 | Prompt                  | What happens?           |
 | ----------------------- | ----------------------- |
-| "Hello"                    | Bot asks your name      |
-| "My name is Ganga"        | Bot remembers your name |
-| "Add buy chocolates"    | Adds to-do              |
-| "Show my to-do list"    | Lists current to-dos    |
-| "Remove buy chocolates" | Removes that to-do      |
+| Bot asks your name      |  "My name is Ganga"     |
+| Adds to-do            |   "Add buy chocolates"  |
+| Lists current to-dos  | "Show my to-do list"    |
+| Removes that to-do    | "Remove buy chocolates"   |
 
 ---
 
@@ -161,19 +146,4 @@ http://127.0.0.1:5000
 
 ---
 
-## 📁 Project Structure
-
-```
-chatbot/
-├── app.py             # Flask app
-├── agent.py           # LLM agent setup
-├── tools.py           # Tool functions (add_todo, list_todo, remove_todo)
-├── memory.py          # Load/save memory to storage.json
-├── templates/
-│   └── index.html     # Web UI
-├── .env               # API keys (not uploaded)
-├── .gitignore         # Ignore virtual env and .env
-├── storage.json       # Chat + to-do list memory
-└── requirements.txt   # Python dependencies
-```
 
