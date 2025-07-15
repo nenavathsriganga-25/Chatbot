@@ -101,7 +101,7 @@ git clone https://github.com/nenavathsriganga-25/Chatbot.git
 cd Chatbot
 ```
 
-### 2️⃣ Set Up Virtual Environment
+### 2️⃣ Set Up Virtual Environment 
 
 
 ```bash
