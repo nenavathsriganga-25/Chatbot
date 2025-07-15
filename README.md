@@ -1,5 +1,5 @@
 # Gemini Chatbot
-**Gemini Chatbot** is a simple and customizable web-based chatbot built using **Python Flask** and **HTML/CSS**.It provides a clean user interface for chatting with a agent, storing message history, and resetting the conversation.
+**Gemini Chatbot** is a simple and customizable web-based chatbot built using **Python Flask** and **HTML/CSS**. It provides a clean user interface for chatting with a agent, storing message history, and resetting the conversation.
 
 ---
 
@@ -23,7 +23,9 @@ chatbot/
 
 ## 🗺️ Architecture Overview
 
-<img width="256" height="288" alt="image" src="https://github.com/user-attachments/assets/a4f3c79c-9d7d-46bc-bda1-2e65fa4563ed" />
+![Architecture](./architecture.png)
+
+---
 
 - The architecture follows an agentic design using Flask, LangChain, and the Gemini API.
 - The Flask frontend handles user interaction through a simple web UI.
@@ -158,7 +160,9 @@ http://127.0.0.1:5000
 
 ---
 
-<img width="300" height="300" alt="image" src="https://github.com/user-attachments/assets/afda4c93-b509-4ffb-8f72-8edaa7a1a6d6" />
+## 💻 Chatbot UI Screenshot
 
+![Chatbot Screenshot](<img width="300" height="300" alt="Screenshot 2025-07-15 164204" src="https://github.com/user-attachments/assets/ae61e6bb-5f7a-4c37-b899-41c953f165db" />
+)
 
 
