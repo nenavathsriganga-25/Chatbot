@@ -1,33 +1,5 @@
 {
-    "name": "sri ganga",
-    "chat_history": [
-        {
-            "user": "sri ganga",
-            "ai": "Nice to meet you, sri ganga! \n    What can I help you with today?"
-        },
-        {
-            "user": "Add buy groceries to my list",
-            "ai": "I have added 'buy groceries' to your to-do list."
-        },
-        {
-            "user": "Add Attend meeting and Complete assignment to my list",
-            "ai": "I have added 'Attend meeting' and 'Complete assignment' to your to-do list."
-        },
-        {
-            "user": "Show my todo list",
-            "ai": "Here's your current to-do list:\n1. buy groceries\n2. Attend meeting\n3. Complete assignment"
-        },
-        {
-            "user": "Remove buy groceries",
-            "ai": "I have removed 'buy groceries' from your to-do list."
-        },
-        {
-            "user": "Show my todo list",
-            "ai": "Here's your current to-do list:\n1. Attend meeting\n2. Complete assignment"
-        }
-    ],
-    "todo_list": [
-        "Attend meeting",
-        "Complete assignment"
-    ]
+    "name": null,
+    "chat_history": [],
+    "todo_list": []
 }
