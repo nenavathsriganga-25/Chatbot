@@ -142,10 +142,10 @@ http://127.0.0.1:5000
 💬 Example Prompts
 | Prompt                  | What happens?           |
 | ----------------------- | ----------------------- |
-| Bot asks your name      |  "My name is Ganga"     |
-| Adds to-do            |   "Add buy chocolates"  |
-| Lists current to-dos  | "Show my to-do list"    |
-| Removes that to-do    | "Remove buy chocolates"   |
+|   "My name is Ganga"    |  Bot asks your name     |
+|  "Add buy chocolates"   |   Adds to-do            |
+| "Show my to-do list"    | Lists current to-dos    |
+|  "Remove buy chocolates"  | Removes that to-do    |
 
 ---
 
