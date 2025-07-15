@@ -1,29 +1,33 @@
 # Gemini Chatbot
-**Gemini Chatbot** is a simple and customizable web-based chatbot built using **Python Flask** and **HTML/CSS**. It provides a clean user interface for chatting with a agent, storing message history, and resetting the conversation.
+**Gemini Chatbot** is a simple and customizable web-based chatbot built using **Python Flask** and **HTML/CSS**. It provides a clean user interface for chatting with an agent, storing message history, and resetting the conversation.
 
 ---
 
 ## 📁 Project Structure
 
 ```
-chatbot/
-├── app.py             # Flask app
-├── agent.py           # LLM agent setup
-├── tools.py           # Tool functions (add_todo, list_todo, remove_todo)
-├── memory.py          # Load/save memory to storage.json
+Chatbot/
+├── app.py                 # Flask web app (runs the chatbot UI)
+├── agent.py               # LangChain agent setup (handles LLM + tools)
+├── tools.py               # To-do list tools (add, list, remove)
+├── memory.py              # Manages memory (loads/saves storage.json)
+├── storage.json           # Persistent storage for name, chat history, todo list
+├── requirements.txt       # Python dependencies
+├── README.md               # Project documentation
+
 ├── templates/
-│   └── index.html     # Web UI
-├── .env               # API keys (not uploaded)
-├── .gitignore         # Ignore virtual env and .env
-├── storage.json       # Chat + to-do list memory
-└── requirements.txt   # Python dependencies
+│   └── index.html         # Chatbot web UI (HTML template)
+
+├── architecture.png       # Architecture diagram (for README)
+├── screenshot.png         # Chatbot UI screenshot (for README)
+
 ```
 
 ---
 
 ## 🗺️ Architecture Overview
 
-![Architecture](./architecture.png) 
+<img src="./architecture.png" width="250px">
 
 ---
 
@@ -93,11 +97,11 @@ agent_executor = initialize_agent(
 ### 1️⃣ Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/Chatbot.git
+git clone https://github.com/nenavathsriganga-25/Chatbot.git
 cd Chatbot
 ```
 
-### 2️⃣ Set Up Virtual Environment
+### 2️⃣ Set Up Virtual Environment 
 
 
 ```bash
@@ -138,10 +142,10 @@ http://127.0.0.1:5000
 💬 Example Prompts
 | Prompt                  | What happens?           |
 | ----------------------- | ----------------------- |
-| Bot asks your name      |  "My name is Ganga"     |
-| Adds to-do            |   "Add buy chocolates"  |
-| Lists current to-dos  | "Show my to-do list"    |
-| Removes that to-do    | "Remove buy chocolates"   |
+|   "My name is Ganga"    |  Bot asks your name     |
+|  "Add buy chocolates"   |   Adds to-do            |
+| "Show my to-do list"    | Lists current to-dos    |
+|  "Remove buy chocolates"  | Removes that to-do    |
 
 ---
 
@@ -162,6 +166,5 @@ http://127.0.0.1:5000
 
 ## 💻 Chatbot UI Screenshot
 
-![Chatbot UI](./screenshot.png)
-
+<img src="./screenshot.png" width="300px">
 
