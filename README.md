@@ -23,9 +23,14 @@ chatbot/
 
 ## 🗺️ Architecture Overview
 
-<img width="256" height="388" alt="image" src="https://github.com/user-attachments/assets/a4f3c79c-9d7d-46bc-bda1-2e65fa4563ed" />
+<img width="256" height="288" alt="image" src="https://github.com/user-attachments/assets/a4f3c79c-9d7d-46bc-bda1-2e65fa4563ed" />
 
-
+- The architecture follows an agentic design using Flask, LangChain, and the Gemini API.
+- The Flask frontend handles user interaction through a simple web UI.
+- User inputs are processed by a LangChain agent, which decides whether to respond directly or call a tool like add_todo, list_todos, or remove_todo.
+- All interactions are stored in a JSON-based memory (storage.json), which saves the user’s name, chat history, and to-do list.
+- Users can also reset the conversation and clear the memory to start a new chat from scratch.
+  
 ---
 
 ## ✨ Features
