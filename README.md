@@ -62,24 +62,33 @@ cd Chatbot
 
 ### 2️⃣ Set Up Virtual Environment
 
+
+```bash
 python -m venv virtual
 .\virtual\Scripts\activate    # For Windows
  #or
 source virtual/bin/activate   # For Mac/Linux
+```
 
 ### 3️⃣ Install Requirements
 
+```bash
 pip install -r requirements.txt
+```
 
 ### 4️⃣ Add Your .env File
 
 Create a .env file in the project root:
 
+```bash
 GOOGLE_API_KEY=your-real-api-key-here
+```
 
 ### 5️⃣ Run the App
 
+```bash
 python app.py
+```
 
 ### 🌐 Access the Web Interface
 
@@ -111,6 +120,8 @@ http://127.0.0.1:5000
 - Switch to LangGraph for more flexible workflows
 
 ## 📁 Project Structure
+
+```
 chatbot/
 ├── app.py             # Flask app
 ├── agent.py           # LLM agent setup
@@ -122,5 +133,5 @@ chatbot/
 ├── .gitignore         # Ignore virtual env and .env
 ├── storage.json       # Chat + to-do list memory
 └── requirements.txt   # Python dependencies
-
+```
 
