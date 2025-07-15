@@ -23,7 +23,7 @@ chatbot/
 
 ## 🗺️ Architecture Overview
 
-<img width="1024" height="1536" alt="image" src="https://github.com/user-attachments/assets/a4f3c79c-9d7d-46bc-bda1-2e65fa4563ed" />
+<img width="512" height="768" alt="image" src="https://github.com/user-attachments/assets/a4f3c79c-9d7d-46bc-bda1-2e65fa4563ed" />
 
 
 ---
