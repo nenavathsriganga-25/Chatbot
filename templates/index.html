@@ -1,36 +1,130 @@
+
+
 <!DOCTYPE html>
 <html>
 <head>
     <title>Gemini Chatbot</title>
     <style>
-        body { font-family: Arial; background: #f4f4f4; padding: 20px; }
-        .chat-box { max-width: 600px; margin: auto; background: white; padding: 20px; border-radius: 10px; }
-        .message { margin-bottom: 15px; }
-        .user { color: #1a73e8; font-weight: bold; }
-        .bot { color: #0b8043; font-weight: bold; }
-        .actions { margin-bottom: 10px; }
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+            padding: 30px;
+        }
+
+        .chat-box {
+            max-width: 700px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .message {
+            margin-bottom: 15px;
+        }
+
+        .user {
+            color: #1a73e8;
+            font-weight: bold;
+        }
+
+        .bot {
+            color: #0b8043;
+            font-weight: bold;
+        }
+
+        form.chat-form {
+            display: flex;
+            gap: 10px;
+            align-items: stretch;
+            margin-bottom: 10px;
+        }
+
+        input[type="text"] {
+            flex: 1;
+            padding: 10px 12px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            background-color: white;
+            color: #000;
+        }
+
+        button[type="submit"] {
+            padding: 10px 20px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            background-color: white;
+            color: #000;
+            cursor: pointer;
+            box-sizing: border-box;
+            appearance: none;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #f0f0f0;
+        }
+
+        .actions {
+            text-align: right;
+            margin-top: 10px;
+        }
+
+        .actions button {
+            font-size: 14px;
+            padding: 6px 12px;
+            background-color: white;
+            color: #000;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .actions button:hover {
+            background-color: #d32f2f;
+        }
+
+        hr {
+            margin: 20px 0;
+        }
     </style>
 </head>
 <body>
     <div class="chat-box">
-        <h2>🤖 Gemini Agentic Chatbot</h2>
-        <form method="POST">
-            <input type="text" name="message" placeholder="Type your message..." required style="width:80%">
+        <h2>🤖 Gemini Chatbot</h2>
+
+        <!-- Chat Input Form -->
+        <form method="POST" class="chat-form">
+            <input type="text" name="message" placeholder="Type your message..." required>
             <button type="submit">Send</button>
         </form>
+
+        <!-- Clear Conversation Button -->
         <div class="actions">
             <form method="POST" action="/clear" style="display:inline;">
-                <button type="submit">Clear Conversation</button>
+                <button type="submit">🗑️ Clear Conversation</button>
             </form>
         </div>
+
         <hr>
+
+        <!-- Chat Messages -->
         {% if name is none %}
-            <p><strong>Bot:</strong> Hello! What's your name?</p>
+            <p><strong>Agent:</strong> Hello! What's your name?</p>
         {% else %}
-            <p><strong>Bot:</strong> Welcome back, {{ name }}!</p>
+            <p><strong>Agent:</strong> Welcome back, {{ name }}!</p>
         {% endif %}
+
         {% for msg in chat_history %}
-            <div class="message"><span class="user">You:</span> {{ msg.user }}</div>
+            <div class="message"><span class="user">User:</span> {{ msg.user }}</div>
             <div class="message"><span class="bot">Agent:</span> {{ msg.ai|replace('\n', '<br>')|safe }}</div>
         {% endfor %}
     </div>
