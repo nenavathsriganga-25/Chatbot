@@ -1,5 +1,38 @@
 # Gemini Chatbot
 **Gemini Chatbot** is a simple and customizable web-based chatbot built using **Python Flask** and **HTML/CSS**.It provides a clean user interface for chatting with a agent, storing message history, and resetting the conversation.
+
+---
+## 🗺️ Architecture Overview
+
+- Textual Flow Diagram
+
++------------------+      User Inputs (messages, to-do commands)       +------------------+
+|                  |  -----------------------------------------------> |                  |
+|  Web Frontend    |                                                   |   Flask Server   |
+| (HTML via Flask) |  <----------------------------------------------- |  (app.py)        |
++------------------+               Bot Responses                      +------------------+
+                                           |
+                                           |
+                                           v
++--------------------------+   Calls agent_executor.run()   +------------------------+
+|                          | ------------------------------> |                        |
+|     LangChain Agent      |                                |    Gemini API (LLM)    |
+|   (agent.py + LangChain) | <------------------------------ | (via LangChain LLM)   |
++--------------------------+      Receives LLM output       +------------------------+
+          |    ^    
+          |    |
+          |    +----------------+
+          |                     |
+          |         Tool Calls (add_todo, list_todos, remove_todo)
+          |                     |
+          v                     |
++-------------------+      +-------------------+
+|    tools.py       |      |   memory.py       |
+| - add_todo()      |      | - Load/Save       |
+| - list_todos()    |      | - storage.json    |
+| - remove_todo()   |      +-------------------+
++-------------------+ 
+
 ---
 
 ## ✨ Features
