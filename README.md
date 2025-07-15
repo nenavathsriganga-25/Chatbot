@@ -1,29 +1,34 @@
 # Gemini Chatbot
 Gemini Chatbot is a simple and customizable web-based chatbot built using Python Flask and HTML/CSS.It provides a clean user interface for chatting with a agent, storing message history, and resetting the conversation.
 The chatbot can:
-     Remember user's name and previous messages
-     Store and manage a personal to-do list
-     Use tool calls (like add_todo, list_todos, remove_todo)
-     Run on a Flask web UI
+     -Remember user's name and previous messages
+     -Store and manage a personal to-do list
+     -Use tool calls (like add_todo, list_todos, remove_todo)
+     -Run on a Flask web UI
+---
 
-# 🧠Memory Storage
-Memory is stored and retrieved using a JSON file called storage.json.
-Memory includes:
-name → User's name (stored after first message)
-chat_history → Full conversation history
-todo_list → Contains to-do list
-Memory is loaded on startup and updated after every tool or chat interaction.
+## 🧠Memory Storage
+Memory is stored and retrieved using a JSON file called **`storage.json`**.
+###Memory includes:
+-name → User's name (stored after first message)
+-chat_history → Full conversation history
+-todo_list → Contains to-do list
+Memory is **loaded on startup** and **updated after every tool or chat interaction**.
+---
 
-# 🔧Tool Calls
-Tools are defined in tools.py using LangChain's @tool decorator:
+## 🔧Tool Calls
+Tools are defined in `tools.py` using LangChain's **@tool** decorator:
+
 | Tool                     | Purpose                        |
 | ------------------------ | ------------------------------ |
 | `add_todo(item: str)`    | Adds an item to the to-do list |
 | `list_todos(dummy: str)` | Lists all current to-dos       |
 | `remove_todo(item: str)` | Removes a to-do item by name   |
 
-Registration with Agent:
-In agent.py, the tools are registered with LangChain’s Agent system:
+###Registration with Agent:
+
+In `agent.py`, the tools are registered with LangChain’s Agent system:
+
 agent_executor = initialize_agent(
     [add_todo, list_todos, remove_todo],
     llm,
